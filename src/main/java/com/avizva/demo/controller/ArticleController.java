@@ -27,6 +27,7 @@ public class ArticleController {
 	public ResponseEntity<Article> getArticleById(@PathVariable("id") Integer id) {
 		Article article = articleService.getArticleById(id);
 		return new ResponseEntity<Article>(article, HttpStatus.OK);
+		//
 	}
 	@GetMapping("articles")
 	public ResponseEntity<List<Article>> getAllArticles() {
